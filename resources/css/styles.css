@@ -1,3 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
+
 html {
-    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16;
+    color: #404040;
+    background-color: #F5F5F5;
 }
+body{
+    margin: 0%;
+}
+
+nav{
+    height: 10%;
+    width: 100%;
+    position:top;
+    margin: 0%;
+    padding: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 3%;
+    color: #404040;
+}
+
+nav a :hover{
+    /*TODO*/
+    color: #808080;
+    font-weight: bolder;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+
+#index{
+    float:left;
+    text-align: left;
+}
+
+#contact{
+    text-align: right;
+    float: right;
+}
+
+#gallery{
+    text-align: center;
+}
+
+.left {
+    margin-top: 10%;
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+    color: #808080;
+}
+
+.right article{
+    margin-top: 10%;
+    font-size: 1.5rem;
+    padding: 10%;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.right ul{
+    margin-top: 10%;
+    list-style: none;
+}
+
+.right h3{
+    display: inline-block;
+}
+
+.right a {
+    padding-left: 3%;
+    text-decoration: none;
+    color: #404040;
+}
+
+.right a:hover{
+    color: #808080;
+    font-weight: bolder;
+}
+
+.imagescontainer{
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.imagecontainer{
+    display: inline-flex;
+    justify-content: space-around;
+    flex-shrink: 1;
+    margin-bottom: 3%;
+    margin-right: 3%;
+}
+
+.imagecontainer img{
+    width: 300px;
+    height: 350px;
+    padding-right: 4%;
+    padding-bottom: 2%;
+    border-right: 2px #757575 solid;
+    border-bottom: 4px #757575 solid;
+    margin-bottom: 3%;
+    margin-right: 3%;
+}
+
+.imagecontainer img:hover{
+    padding-right: 3%;
+    padding-bottom: 1%;
+    border-right: 2px black solid;
+    border-bottom: 4px black solid;
+    margin-bottom: 3%;
+    margin-right: 3%;
+}
+
+
+@media only screen and (max-width: 1410px) {
+    main{
+        display: grid;
+        height: 1080px;;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .left{
+        text-align: center;
+    }
+
+    .right ul{
+        text-align: center;
+    }
+
+    .imagecontainer img{
+        width: 70%;
+        height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .left{
+        font-size: 80px;
+    }
+
+    .imagescontainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+  }
